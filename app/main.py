@@ -5,9 +5,18 @@ from app.github.scoring import first_builders_label, get_points
 from app.db import SessionLocal
 from app.models import User, Repo, Contribution
 from app.config import ALLOWED_REPOS
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
+
+templates = Jinja2Templates(directory="app/templates")
+
+
+@app.get("/", response_class=HTMLResponse)
+def home(request: Request):
+        """Render the Jinja2 `home.html` template."""
+        return templates.TemplateResponse("home.html", {"request": request})
 
 def get_db():
     db = SessionLocal()
@@ -16,7 +25,7 @@ def get_db():
     finally:
         db.close()
 
-@app.get("/leaderboard")
+@app.get("/api/leaderboard")
 def leaderboard():
     """
     Returns all builders sorted by total points descending.
@@ -47,7 +56,7 @@ def leaderboard():
 def health():
     return {"status": "ok"}
 
-@app.get("/builders/{github_username}")
+@app.get("/api/builders/{github_username}")
 def get_profile(github_username: str):
     db = SessionLocal()
     user = db.query(User).filter(User.github_username == github_username).first()
