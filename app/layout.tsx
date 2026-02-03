@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <ConditionalHeader
           header={<Header />}
-          excludedPaths={["/app", "/admin*"]}
+          excludedPaths={["/app*", "/admin*"]}
         >
           {children}
         </ConditionalHeader>
