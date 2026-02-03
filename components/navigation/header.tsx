@@ -1,12 +1,12 @@
 "use client";
 import { useScroll } from "@/hooks/use-scroll";
-import { Logo } from "@/components/logo";
+import { Logo } from "@/components/navigation/logo";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 import { cn } from "@/lib/utils";
-import { DesktopNav } from "@/components/desktop-nav";
-import { MobileNav } from "@/components/mobile-nav";
+import { DesktopNav } from "@/components/navigation/desktop-nav";
+import { MobileNav } from "@/components/navigation/mobile-nav";
 
 export function Header() {
 	const scrolled = useScroll(10);

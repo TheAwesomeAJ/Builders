@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { MenuIcon, XIcon } from "lucide-react";
 import React from "react";
 import { createPortal } from "react-dom";
-import { companyLinks, companyLinks2, productLinks } from "@/components/nav-links";
+import { companyLinks, companyLinks2, productLinks } from "@/components/navigation/nav-links";
 import { LinkItem } from "@/components/sheard";
 
 export function MobileNav() {
