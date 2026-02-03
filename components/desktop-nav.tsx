@@ -84,11 +84,6 @@ export function DesktopNav() {
             Leaderboard
           </a>
         </NavigationMenuLink>
-		<NavigationMenuLink asChild className="px-4">
-          <a className="rounded-md p-2 hover:bg-accent" href="/pricing">
-            Pricing
-          </a>
-        </NavigationMenuLink>
       </NavigationMenuList>
     </NavigationMenu>
   );

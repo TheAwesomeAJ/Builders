@@ -20,7 +20,7 @@ export const productLinks: LinkItemType[] = [
   {
     label: "Project Dashboard",
     href: "/dashboard",
-    description: "View and manage your Hack Club contributions",
+    description: "View and manage your contributions",
     icon: Layers,
   },
   {
@@ -44,7 +44,7 @@ export const productLinks: LinkItemType[] = [
   {
     label: "Integrations",
     href: "/integrations",
-    description: "Connect your projects with Hack Club tools",
+    description: "Connect your projects with popular tools",
     icon: Globe,
   },
   {
@@ -71,7 +71,7 @@ export const companyLinks: LinkItemType[] = [
   {
     label: "Join a Team",
     href: "/teams",
-    description: "Collaborate with other Hack Clubbers",
+    description: "Collaborate with other Builders",
     icon: UserPlus,
   },
 ];
