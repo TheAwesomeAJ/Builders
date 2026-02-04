@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { DesktopNav } from "@/components/navigation/desktop-nav";
 import { MobileNav } from "@/components/navigation/mobile-nav";
+import { ModeToggle } from "../theme-toggle";
 
 export function Header() {
 	const scrolled = useScroll(10);
@@ -26,6 +27,7 @@ export function Header() {
 					<DesktopNav />
 				</div>
 				<div className="hidden items-center gap-2 md:flex">
+					<ModeToggle />
 					<Button variant="outline">Sign In</Button>
 					<Button>Get Started</Button>
 				</div>

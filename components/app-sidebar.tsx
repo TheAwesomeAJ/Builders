@@ -161,8 +161,15 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:p-1.5!"
             >
               <a href="#">
-                <IconInnerShadowTop className="size-5!" />
-                <span className="text-base font-semibold">Acme Inc.</span>
+                <svg
+                  className="size-5!"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <image href="https://assets.hackclub.com/icon-rounded.svg" width="32" height="32" />
+                </svg>
+                <span className="text-base font-semibold">Hack Club Builders</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>

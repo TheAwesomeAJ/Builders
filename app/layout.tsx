@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Figtree } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/navigation/header";
 import ConditionalHeader from "@/components/logic/conditional-header";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
 
@@ -27,16 +28,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={figtree.variable}>
+    <html lang="en" suppressHydrationWarning className={figtree.variable}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
         <ConditionalHeader
           header={<Header />}
           excludedPaths={["/app*", "/admin*"]}
         >
           {children}
         </ConditionalHeader>
+        </ThemeProvider>
       </body>
     </html>
   );
