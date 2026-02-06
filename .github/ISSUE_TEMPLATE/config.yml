@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions / Help
+    url: https://app.slack.com/client/E09V59WQY1E  # Replace with the Builders channel link
+    about: Ask questions or get help in the Hack Club Slack, under the #builders channel.
+  - name: Security issue
+    url: https://github.com/TheAwesomeAJ/Builders/security/policy
+    about: Please report security vulnerabilities privately.
