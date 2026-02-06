@@ -1,0 +1,23 @@
+/* Admin-specific overrides: make the admin UI a bit more red */
+.admin-theme {
+  --accent: #ff5252;
+  --accent-foreground: #ffffff;
+  --sidebar-accent: #ff6b6b;
+  --sidebar-accent-foreground: #ffffff;
+  --primary: #ff3b3b;
+  --primary-foreground: #ffffff;
+  --destructive: #ff2e2e;
+  --ring: rgba(255, 59, 59, 0.18);
+  --sidebar-border: rgba(255, 59, 59, 0.06);
+}
+
+/* small additional tweaks to emphasize red accents */
+.admin-theme a:hover,
+.admin-theme a:focus {
+  color: var(--accent) !important;
+}
+
+.admin-theme .btn,
+.admin-theme button {
+  border-color: var(--sidebar-border);
+}
