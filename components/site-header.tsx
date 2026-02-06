@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { SidebarTrigger } from "@/components/ui/sidebar"
-import { Minus } from "lucide-react"
+import { Github, Minus } from "lucide-react"
 import type { ReactNode } from "react"
+import { ModeToggle } from "./theme-toggle"
 
 export function SiteHeader({
   title = "Documents",
@@ -18,16 +19,20 @@ export function SiteHeader({
         <h1 className="text-base font-medium leading-none">{title}</h1>
         <div className="ml-auto flex items-center gap-2">
           {children ?? (
-            <Button variant="ghost" asChild size="sm" className="hidden sm:flex">
+            <>
+            <ModeToggle />
+            <Button variant="outline" asChild size="sm" className="hidden sm:flex">
               <a
                 href="https://github.com/shadcn-ui/ui/tree/main/apps/v4/app/(examples)/dashboard"
                 rel="noopener noreferrer"
                 target="_blank"
                 className="dark:text-foreground"
               >
+                <Github />
                 GitHub
               </a>
             </Button>
+            </>
           )}
         </div>
       </div>

@@ -4,20 +4,19 @@ import * as React from "react"
 import {
   IconCamera,
   IconChartBar,
-  IconDashboard,
   IconDatabase,
   IconFileAi,
   IconFileDescription,
   IconFileWord,
   IconFolder,
   IconHelp,
-  IconInnerShadowTop,
-  IconListDetails,
   IconReport,
   IconSearch,
   IconSettings,
   IconUsers,
 } from "@tabler/icons-react"
+
+import { House, GitMerge } from "lucide-react"
 
 import { NavDocuments } from "@/components/nav-documents"
 import { NavMain } from "@/components/nav-main"
@@ -41,28 +40,28 @@ const data = {
   },
   navMain: [
     {
-      title: "Dashboard",
-      url: "/dashboard",
-      icon: IconDashboard,
+      title: "Home",
+      url: "/app",
+      icon: House,
     },
     {
       title: "Contributions",
-      url: "/contributions",
-      icon: IconListDetails,
+      url: "/app/contributions",
+      icon: GitMerge,
     },
     {
       title: "Leaderboard",
-      url: "/leaderboard",
+      url: "/app/leaderboard",
       icon: IconChartBar,
     },
     {
       title: "Projects",
-      url: "/projects",
+      url: "/app/projects",
       icon: IconFolder,
     },
     {
       title: "Teams",
-      url: "/teams",
+      url: "/app/teams",
       icon: IconUsers,
     },
   ],
@@ -71,45 +70,45 @@ const data = {
       title: "Challenges",
       icon: IconCamera,
       isActive: true,
-      url: "/challenges",
+      url: "/app/challenges",
       items: [
         {
           title: "Active Challenges",
-          url: "/challenges/active",
+          url: "/app/challenges/active",
         },
         {
           title: "Completed",
-          url: "/challenges/completed",
+          url: "/app/challenges/completed",
         },
       ],
     },
     {
       title: "Repositories",
       icon: IconFileDescription,
-      url: "/repos",
+      url: "/app/repos",
       items: [
         {
           title: "Official Repos",
-          url: "/repos/official",
+          url: "/app/repos/official",
         },
         {
           title: "Archived",
-          url: "/repos/archived",
+          url: "/app/repos/archived",
         },
       ],
     },
     {
       title: "Automation",
       icon: IconFileAi,
-      url: "/automation",
+      url: "/app/automation",
       items: [
         {
           title: "Active Rules",
-          url: "/automation/active",
+          url: "/app/automation/active",
         },
         {
           title: "History",
-          url: "/automation/history",
+          url: "/app/automation/history",
         },
       ],
     },
@@ -117,17 +116,17 @@ const data = {
   navSecondary: [
     {
       title: "Settings",
-      url: "/settings",
+      url: "/app/settings",
       icon: IconSettings,
     },
     {
       title: "Get Help",
-      url: "/help",
+      url: "/app/help",
       icon: IconHelp,
     },
     {
       title: "Search",
-      url: "/search",
+      url: "/app/search",
       icon: IconSearch,
     },
   ],
@@ -139,12 +138,12 @@ const data = {
     },
     {
       name: "Contribution Reports",
-      url: "/reports",
+      url: "/app/reports",
       icon: IconReport,
     },
     {
       name: "Scoring Rules",
-      url: "/scoring",
+      url: "/help/scoring",
       icon: IconFileWord,
     },
   ],
