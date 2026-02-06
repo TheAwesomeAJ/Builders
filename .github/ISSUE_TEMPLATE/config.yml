@@ -1,8 +1,16 @@
 blank_issues_enabled: false
+
+# Contact links for help or security
 contact_links:
-  - name: Questions / Help
-    url: https://app.slack.com/client/E09V59WQY1E  # Replace with the Builders channel link
-    about: Ask questions or get help in the Hack Club Slack, under the #builders channel.
-  - name: Security issue
-    url: https://github.com/TheAwesomeAJ/Builders/security/policy
-    about: Please report security vulnerabilities privately.
+  - name: "💬 Questions / Help"
+    url: "https://app.slack.com/client/E09V59WQY1E"
+    about: |
+      Need help or have questions?  
+      Join the **Hack Club Slack**, under the **#builders** channel.  
+      You can ask for guidance, discuss issues, or get feedback here.
+
+  - name: "🔒 Security Issue"
+    url: "https://github.com/TheAwesomeAJ/Builders/security/policy"
+    about: |
+      Please report any security vulnerabilities **privately**.  
+      Do **not** post sensitive info in public issues.
