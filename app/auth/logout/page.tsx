@@ -17,9 +17,10 @@ export default function LogoutPage() {
 						},
 					},
 				});
+			// eslint-disable-next-line @typescript-eslint/no-unused-vars
 			} catch (err) {
 				// If signOut fails, redirect to home as a fallback
-				router.replace("/");
+				router.replace("/error?message=Failed%20to%20sign%20out");
 			}
 		})();
 	}, [router]);

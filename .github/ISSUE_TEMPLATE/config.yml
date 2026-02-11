@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: "💬 Questions / Help"
+    url: "https://app.slack.com/client/E09V59WQY1E"
+    about: "Need help or have questions? Join the Hack Club Slack and ask in the #builders channel."
+
+  - name: "🔒 Security Issue"
+    url: "https://github.com/TheAwesomeAJ/Builders/security/policy"
+    about: "Please report any security vulnerabilities privately. Do not post sensitive info in public issues."

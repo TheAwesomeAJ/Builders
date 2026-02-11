@@ -1,0 +1,20 @@
+name: Chore / Maintenance
+description: Internal tasks, cleanup, or upgrades
+title: "[Chore]: "
+labels: ["type: chore"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "Example: Upgrade Node version to 20"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      placeholder: "Optional details about what needs to be done"
+    validations:
+      required: false
