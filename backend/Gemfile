@@ -32,6 +32,10 @@ gem "thruster", require: false
 # Timezone data for Windows
 gem "tzinfo-data", platforms: %i[windows jruby]
 
+# Gemfile
+gem 'devise'
+gem 'devise_token_auth'
+
 # Optional: security & linting tools for development/test
 group :development, :test do
   # Debugging
